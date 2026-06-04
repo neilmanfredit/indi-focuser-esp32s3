@@ -17,6 +17,8 @@ indi_driver/build/
 *.dxf
 *.svg
 *.png
+!docs/images/*.png
+!docs/images/*.svg
 
 # Python
 __pycache__/
