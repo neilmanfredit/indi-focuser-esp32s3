@@ -1,0 +1,36 @@
+# /etc/udev/rules.d/99-oag-focuser.rules
+#
+# Gives the OAG focuser a stable symlink: /dev/oag_focuser
+#
+# To install:
+#   sudo cp 99-oag-focuser.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+#
+# ── Arduino Nano ESP32 (ESP32-S3) ────────────────────────────────────────────
+# The ESP32-S3 presents a native USB CDC device — no CH340/FTDI chip.
+# It enumerates as /dev/ttyACM* by default.
+# VID 0x2341 = Arduino, PID 0x0070 = Nano ESP32 (ABX00083)
+
+SUBSYSTEM=="tty", \
+    ATTRS{idVendor}=="2341", \
+    ATTRS{idProduct}=="0070", \
+    SYMLINK+="oag_focuser", \
+    MODE="0666"
+
+# ── Espressif native USB CDC (bare ESP32-S3 modules / custom boards) ──────────
+SUBSYSTEM=="tty", \
+    ATTRS{idVendor}=="303a", \
+    ATTRS{idProduct}=="1001", \
+    SYMLINK+="oag_focuser", \
+    MODE="0666"
+
+# ── Arduino Nano (ATmega328P) with CH340G USB-serial — kept for reference ─────
+SUBSYSTEM=="tty", \
+    ATTRS{idVendor}=="1a86", \
+    ATTRS{idProduct}=="7523", \
+    SYMLINK+="oag_focuser_nano", \
+    MODE="0666"
+
+# How to find your board's IDs if the above don't match:
+#   lsusb
+#   udevadm info --attribute-walk /dev/ttyACM0 | grep -E 'idVendor|idProduct'

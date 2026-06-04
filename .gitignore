@@ -1,0 +1,42 @@
+# Build artefacts
+indi_driver/build/
+*.o
+*.a
+*.so
+
+# Arduino IDE
+*.elf
+*.bin
+*.hex
+*.map
+
+# OpenSCAD exports
+*.stl
+*.amf
+*.3mf
+*.dxf
+*.svg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archives
+*.tar.gz
+*.zip

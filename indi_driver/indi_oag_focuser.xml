@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<driversList>
+  <devGroup group="Focusers">
+    <device label="OAG Focuser" manufacturer="DarkSkyGeek/jlecomte">
+      <driver name="OAG Focuser">indi_oag_focuser</driver>
+      <version>1.0</version>
+    </device>
+  </devGroup>
+</driversList>

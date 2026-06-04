@@ -1,0 +1,38 @@
+name: Build INDI driver
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'indi_driver/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'indi_driver/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libindi-dev libnova-dev cmake build-essential
+
+      - name: Configure
+        run: |
+          cd indi_driver
+          mkdir build && cd build
+          cmake ..
+
+      - name: Build
+        run: |
+          cd indi_driver/build
+          make -j$(nproc)
+
+      - name: Confirm binary exists
+        run: test -f indi_driver/build/indi_oag_focuser
