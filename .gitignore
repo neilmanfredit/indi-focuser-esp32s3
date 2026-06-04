@@ -12,6 +12,7 @@ indi_driver/build/
 
 # OpenSCAD exports
 *.stl
+!3d_files/*.stl
 *.amf
 *.3mf
 *.dxf
