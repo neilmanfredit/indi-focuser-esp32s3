@@ -1,6 +1,6 @@
 # indi-focuser-esp32s3
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-gold.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)]()
 [![Board](https://img.shields.io/badge/board-Arduino%20Nano%20ESP32--S3-red.svg)]()
 [![INDI](https://img.shields.io/badge/INDI-compatible-green.svg)]()
@@ -275,7 +275,7 @@ Pull requests are welcome. Adding a mount design for a new telescope is particul
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE) — CC BY-NC-SA 4.0, non-commercial use only.
 
 This project is independent and not affiliated with Julien Lecomte's ascom-oag-focuser. See [NOTICE](NOTICE) for attribution.
 
