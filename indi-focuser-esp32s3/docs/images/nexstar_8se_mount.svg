@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="960" viewBox="0 0 800 960"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="'Segoe UI', Arial, sans-serif">
+
+  <rect width="800" height="960" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#7f8c8d" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#1a252f"/>
+  <text x="400" y="30" text-anchor="middle" dominant-baseline="central"
+        font-size="18" font-weight="600" fill="#ffffff">
+    Celestron NexStar 8SE — Motor Focuser Mount
+  </text>
+  <text x="400" y="50" text-anchor="middle" dominant-baseline="central"
+        font-size="11" fill="#95a5a6">
+    Rear-cell plate replacement · SCT mirror-shift focuser · PETG
+  </text>
+
+  <!-- ══════════════════════════════════════════════
+       PART 1 — REAR CELL PLATE
+  ══════════════════════════════════════════════ -->
+  <g transform="translate(30,80)">
+    <rect x="0" y="0" width="230" height="260" rx="8" fill="#f8f9fa" stroke="#dde1e7" stroke-width="1"/>
+    <!-- outer plate circle -->
+    <circle cx="105" cy="115" r="100" fill="white" stroke="#2c3e50" stroke-width="2"/>
+    <!-- register shoulder -->
+    <circle cx="105" cy="115" r="90"  fill="none" stroke="#7f8c8d" stroke-width="0.8" stroke-dasharray="5 3"/>
+    <!-- triangular back-cell pattern -->
+    <path d="M105,22 L190,168 L20,168 Z" fill="none" stroke="#7f8c8d" stroke-width="0.7" stroke-dasharray="4 3"/>
+    <!-- 3 cover bolt holes on 52 mm PCD -->
+    <circle cx="105" cy="22"  r="6" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <circle cx="25"  cy="170" r="6" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <circle cx="185" cy="170" r="6" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <!-- focus shaft clearance -->
+    <circle cx="105" cy="115" r="10" fill="#e8f4fd" stroke="#7f8c8d" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="105" y="119" text-anchor="middle" font-size="8" fill="#5d6d7e">shaft</text>
+    <!-- motor housing boss (right of centre) -->
+    <rect x="185" y="76" width="52" height="80" rx="7" fill="#f0f3f6" stroke="#2c3e50" stroke-width="1.5"/>
+    <circle cx="211" cy="116" r="22" fill="white" stroke="#7f8c8d" stroke-width="1" stroke-dasharray="4 3"/>
+    <text x="211" y="120" text-anchor="middle" font-size="8" fill="#5d6d7e">motor</text>
+    <!-- gear bridge web -->
+    <path d="M115,116 Q148,116 163,116" fill="none" stroke="#7f8c8d" stroke-width="2.5" stroke-dasharray="5 3"/>
+    <!-- motor heat-set positions -->
+    <circle cx="190" cy="88"  r="3" fill="white" stroke="#7f8c8d" stroke-width="1"/>
+    <circle cx="190" cy="145" r="3" fill="white" stroke="#7f8c8d" stroke-width="1"/>
+    <!-- part name -->
+    <text x="105" y="232" text-anchor="middle" font-size="13" font-weight="600" fill="#1a252f">Rear cell plate</text>
+    <text x="105" y="248" text-anchor="middle" font-size="10" fill="#5d6d7e">Replaces 3-screw cover · 85 mm OD</text>
+  </g>
+
+  <!-- badge -->
+  <circle cx="57" cy="88" r="10" fill="#27ae60"/>
+  <text x="57" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="white">1</text>
+
+  <!-- ══════════════════════════════════════════════
+       PART 2 — FRICTION SLEEVE WITH GEAR
+  ══════════════════════════════════════════════ -->
+  <g transform="translate(290,80)">
+    <rect x="0" y="0" width="230" height="260" rx="8" fill="#f8f9fa" stroke="#dde1e7" stroke-width="1"/>
+    <!-- gear body -->
+    <circle cx="115" cy="90" r="80" fill="none" stroke="#2c3e50" stroke-width="2"/>
+    <circle cx="115" cy="90" r="68" fill="#e8f4fd" stroke="#7f8c8d" stroke-width="0.8" stroke-dasharray="5 3" fill-opacity="0.4"/>
+    <!-- 36T herringbone hints -->
+    <g stroke="#2c3e50" stroke-width="1" fill="none">
+      <path d="M195,74 L204,77 M195,82 L204,77"/>
+      <path d="M186,46 L193,36 M180,48 L193,36"/>
+      <path d="M154,20 L158,8  M148,22 L158,8"/>
+      <path d="M116,10 L114,0  M108,12 L114,0"/>
+      <path d="M76,20 L70,8   M72,26 L70,8"/>
+      <path d="M44,46 L36,36  M40,52 L36,36"/>
+      <path d="M28,74 L18,77  M28,82 L18,77"/>
+      <path d="M28,106 L18,103 M28,98 L18,103"/>
+      <path d="M44,134 L36,144 M50,132 L36,144"/>
+      <path d="M76,160 L70,172 M82,158 L70,172"/>
+      <path d="M116,170 L114,180 M122,168 L114,180"/>
+      <path d="M154,160 L158,172 M160,156 L158,172"/>
+      <path d="M186,134 L193,144 M180,132 L193,144"/>
+      <path d="M195,106 L204,103 M195,98 L204,103"/>
+    </g>
+    <!-- hub below gear -->
+    <rect x="88" y="170" width="54" height="68" rx="7" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <!-- shaft bore -->
+    <rect x="96" y="170" width="38" height="68" rx="4" fill="#e8f4fd" stroke="#7f8c8d" stroke-width="0.8" stroke-dasharray="4 3"/>
+    <!-- compression slot -->
+    <line x1="115" y1="170" x2="115" y2="238" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <!-- grub screw -->
+    <circle cx="115" cy="204" r="3" fill="white" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="115" y="94" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">36T</text>
+    <!-- bore dimension arrows -->
+    <line x1="96" y1="214" x2="134" y2="214" stroke="#7f8c8d" stroke-width="0.8" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="115" y="208" text-anchor="middle" font-size="8" fill="#e74c3c" font-weight="600">13.1 mm bore ← MEASURE FIRST</text>
+    <!-- part name -->
+    <text x="115" y="252" text-anchor="middle" font-size="13" font-weight="600" fill="#1a252f">Friction sleeve + gear</text>
+  </g>
+  <circle cx="317" cy="88" r="10" fill="#27ae60"/>
+  <text x="317" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="white">2</text>
+
+  <!-- ══════════════════════════════════════════════
+       PART 3 — MOTOR PINION
+  ══════════════════════════════════════════════ -->
+  <g transform="translate(555,80)">
+    <rect x="0" y="0" width="215" height="260" rx="8" fill="#f8f9fa" stroke="#dde1e7" stroke-width="1"/>
+    <circle cx="107" cy="95" r="40" fill="none" stroke="#2c3e50" stroke-width="2"/>
+    <circle cx="107" cy="95" r="30" fill="#e8f4fd" stroke="#7f8c8d" stroke-width="0.8" stroke-dasharray="4 3" fill-opacity="0.5"/>
+    <g stroke="#2c3e50" stroke-width="1.1" fill="none">
+      <path d="M147,86 L155,90 M147,96 L155,90"/>
+      <path d="M138,64 L144,54 M132,66 L144,54"/>
+      <path d="M107,68 L107,56 M101,70 L107,56"/>
+      <path d="M76,64 L68,54  M80,66 L68,54"/>
+      <path d="M67,86 L59,90  M67,96 L59,90"/>
+      <path d="M67,106 L59,102 M67,116 L59,102"/>
+      <path d="M76,128 L68,136 M82,126 L68,136"/>
+      <path d="M107,132 L107,144 M113,130 L107,144"/>
+      <path d="M138,128 L144,136 M132,126 L144,136"/>
+      <path d="M147,106 L155,102 M147,116 L155,102"/>
+    </g>
+    <circle cx="107" cy="95" r="6" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="101" y1="92" x2="113" y2="92" stroke="#2c3e50" stroke-width="2"/>
+    <text x="107" y="99" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">10T</text>
+    <!-- grub screw -->
+    <circle cx="107" cy="65" r="2.5" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="107" y="185" text-anchor="middle" font-size="13" font-weight="600" fill="#1a252f">Motor pinion</text>
+    <text x="107" y="201" text-anchor="middle" font-size="10" fill="#5d6d7e">10 T · 5 mm D-shaft bore</text>
+    <!-- ratio badge -->
+    <rect x="27" y="215" width="160" height="18" rx="4" fill="#27ae60" fill-opacity="0.12"/>
+    <text x="107" y="227" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">3.6:1 reduction ratio</text>
+  </g>
+  <circle cx="582" cy="88" r="10" fill="#27ae60"/>
+  <text x="582" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="white">3</text>
+
+  <!-- ══════════════════════════════════════════════
+       ASSEMBLY — REAR VIEW
+  ══════════════════════════════════════════════ -->
+  <g transform="translate(30,370)">
+    <rect x="0" y="0" width="740" height="280" rx="8" fill="#f8f9fa" stroke="#dde1e7" stroke-width="1"/>
+    <text x="370" y="24" text-anchor="middle" font-size="13" font-weight="600" fill="#1a252f">Installation — rear view</text>
+
+    <!-- outer rear cell flange ring -->
+    <circle cx="250" cy="150" r="130" fill="white" stroke="#2c3e50" stroke-width="2"/>
+    <!-- triangular back-cell -->
+    <path d="M250,26 L370,234 L130,234 Z" fill="none" stroke="#7f8c8d" stroke-width="0.8" stroke-dasharray="5 3"/>
+    <!-- 3 screw holes -->
+    <circle cx="250" cy="28"  r="7" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <circle cx="138" cy="220" r="7" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <circle cx="362" cy="220" r="7" fill="white" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="250" y="14"  font-size="8" text-anchor="middle" fill="#5d6d7e">M3 screw (reuse)</text>
+    <text x="80"  y="228" font-size="8" text-anchor="middle" fill="#5d6d7e">M3 screw</text>
+    <text x="420" y="228" font-size="8" text-anchor="middle" fill="#5d6d7e">M3 screw</text>
+
+    <!-- motor plate dashed overlay -->
+    <circle cx="250" cy="150" r="118" fill="none" stroke="#27ae60" stroke-width="2" stroke-dasharray="7 4"/>
+    <text x="370" y="142" font-size="9" fill="#27ae60">motor plate</text>
+    <text x="370" y="154" font-size="9" fill="#27ae60">(overlaid)</text>
+
+    <!-- focus shaft -->
+    <circle cx="250" cy="150" r="10" fill="#e8f4fd" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="250" y="154" text-anchor="middle" font-size="8" fill="#5d6d7e">shaft</text>
+
+    <!-- friction sleeve gear on shaft -->
+    <circle cx="250" cy="150" r="55" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="250" y="134" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="600">36T gear</text>
+
+    <!-- motor housing -->
+    <rect x="352" y="112" width="72" height="76" rx="7" fill="#f0f3f6" stroke="#2c3e50" stroke-width="1.5"/>
+    <!-- motor circle -->
+    <circle cx="388" cy="150" r="30" fill="white" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="388" y="148" text-anchor="middle" font-size="9" fill="#5d6d7e">28BYJ-48</text>
+    <text x="388" y="160" text-anchor="middle" font-size="8" fill="#5d6d7e">motor</text>
+
+    <!-- small pinion on motor shaft -->
+    <circle cx="388" cy="150" r="18" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="388" y="176" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="600">10T</text>
+
+    <!-- mesh contact mark -->
+    <circle cx="307" cy="150" r="5" fill="#e74c3c"/>
+    <text x="320" y="138" font-size="8" fill="#e74c3c">gear mesh</text>
+
+    <!-- centre distance dimension -->
+    <line x1="250" y1="220" x2="388" y2="220" stroke="#7f8c8d" stroke-width="0.8" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="319" y="235" text-anchor="middle" font-size="9" fill="#7f8c8d">138 mm centre distance</text>
+
+    <!-- warning callout -->
+    <rect x="470" y="50" width="255" height="80" rx="7" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="597" y="70" text-anchor="middle" font-size="11" font-weight="600" fill="#e67e22">⚠  Measure before printing</text>
+    <text x="597" y="88" text-anchor="middle" font-size="10" fill="#7f8c8d">Focus shaft OD varies unit to unit.</text>
+    <text x="597" y="103" text-anchor="middle" font-size="10" fill="#7f8c8d">Default: 13.1 mm. Verify with calipers.</text>
+    <text x="597" y="118" text-anchor="middle" font-size="10" fill="#e67e22">Set focus_shaft_od in SCAD file.</text>
+
+    <!-- installation steps -->
+    <text x="470" y="158" font-size="10" font-weight="600" fill="#1a252f">Installation:</text>
+    <text x="470" y="174" font-size="10" fill="#5d6d7e">1. Pull off rubber focus knob</text>
+    <text x="470" y="189" font-size="10" fill="#5d6d7e">2. Remove 3 rear-cell cover screws</text>
+    <text x="470" y="204" font-size="10" fill="#5d6d7e">3. Slide friction sleeve onto shaft</text>
+    <text x="470" y="219" font-size="10" fill="#5d6d7e">4. Fit motor plate, reuse 3 screws</text>
+    <text x="470" y="234" font-size="10" fill="#5d6d7e">5. Tighten M3 grub against shaft flat</text>
+    <text x="470" y="249" font-size="10" fill="#5d6d7e">6. Attach electronics box to side pegs</text>
+  </g>
+  <circle cx="57" cy="378" r="10" fill="#27ae60"/>
+  <text x="57" y="382" text-anchor="middle" font-size="10" font-weight="700" fill="white">4</text>
+
+  <!-- Hardware strip -->
+  <rect x="20" y="672" width="760" height="58" rx="8" fill="#1a252f"/>
+  <text x="400" y="694" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Hardware bill of materials</text>
+  <text x="400" y="712" text-anchor="middle" font-size="10" fill="#95a5a6">M3×12 × 3 (reuse rear-cell screws)  ·  M3×6 × 4 (electronics box)  ·  M3 heat-set × 7  ·  M2×8 × 2 (motor PCB)  ·  M2 heat-set × 4  ·  M3 grub × 1</text>
+  <text x="400" y="722" text-anchor="middle" font-size="10" fill="#95a5a6">Print: PETG  ·  0.2 mm layers  ·  4 perimeters  ·  45 % infill on gears  ·  No supports required</text>
+
+  <!-- Footer -->
+  <rect x="0" y="740" width="800" height="30" fill="#f0f3f6"/>
+  <text x="400" y="758" text-anchor="middle" font-size="9" fill="#7f8c8d">
+    github.com/YOUR_USERNAME/indi-focuser-esp32s3  ·  MIT Licence  ·  OpenSCAD source: 3d_files/celestron-nexstar-8se/
+  </text>
+</svg>

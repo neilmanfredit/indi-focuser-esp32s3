@@ -1,0 +1,43 @@
+THIRD-PARTY NOTICES
+===================
+
+This project is inspired by and gives credit to the following upstream work:
+
+Project:   ascom-oag-focuser (v2)
+Author:    Julien Lecomte (jlecomte / DarkSkyGeek)
+Source:    https://github.com/jlecomte/ascom-oag-focuser/tree/v2
+Licence:   See upstream repository for licence terms.
+
+What this project borrows from the upstream work
+-------------------------------------------------
+- The serial command protocol (COMMAND:FOCUSER:* / REPLY:FOCUSER:*)
+  The protocol was reverse-engineered from the README and driver source
+  references. No source code from the upstream ASCOM driver or firmware
+  has been copied into this repository.
+
+- The general concept and hardware design (28BYJ-48 stepper, ULN2003 board,
+  herringbone gear approach, PETG material recommendation).
+
+What this project does that is new and original
+-----------------------------------------------
+- Arduino firmware rewritten from scratch for the ESP32-S3 (Arduino Nano
+  ESP32), including ESP32-specific EEPROM emulation, correct pin mapping,
+  mandatory pinMode() calls, and verified motor de-energisation behaviour.
+
+- INDI driver (C++) — a completely new implementation targeting Linux,
+  PHD2, and KStars/Ekos. No ASCOM code is present or derived.
+
+- Python serial test utility — written independently.
+
+- udev rules — written independently.
+
+- OpenSCAD 3D models for three telescopes (RVO Horizon 60 ED, Celestron
+  NexStar 8SE, SkyWatcher Explorer 200P) — original designs, not derived
+  from any upstream STL or CAD file.
+
+The Celestron OAG STL files in the upstream repository were created by a
+contributor (Endymion42) and are not reproduced here. If you use a Celestron
+OAG, refer to the upstream repository for those specific 3D files.
+
+If you believe anything in this repository infringes on upstream licencing
+terms, please open an issue and it will be addressed promptly.

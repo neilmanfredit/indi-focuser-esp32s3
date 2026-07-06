@@ -1,0 +1,34 @@
+{
+  "type": "process",
+  "name": "indi-focuser-PETG-structural",
+  "inherits": "0.20mm Standard @BBL X1C",
+  "description": "PETG settings for structural parts — clamp body, brackets, electronics box. Part of the indi-focuser-esp32s3 project.",
+
+  "layer_height": 0.2,
+  "initial_layer_print_height": 0.2,
+
+  "wall_loops": 4,
+  "top_shell_layers": 5,
+  "bottom_shell_layers": 5,
+
+  "sparse_infill_density": 30,
+  "sparse_infill_pattern": "gyroid",
+
+  "outer_wall_speed": 60,
+  "inner_wall_speed": 80,
+  "sparse_infill_speed": 150,
+  "initial_layer_speed": 30,
+  "initial_layer_infill_speed": 30,
+
+  "enable_support": false,
+  "support_type": "normal(auto)",
+
+  "skirt_loops": 1,
+  "brim_type": "no_brim",
+
+  "seam_position": "back",
+
+  "ironing_enabled": false,
+
+  "notes": "Use textured PEI plate. Clean with IPA before printing. For: clamp body, clamp lid, side bracket, electronics box, electronics lid, rear cell plate."
+}
