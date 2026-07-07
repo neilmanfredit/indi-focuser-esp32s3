@@ -85,25 +85,34 @@ module d_shaft(d, flat_depth, h) {
 }
 
 module gear_2d(teeth, mod) {
+    // Additive trapezoidal tooth profile — robust for FDM printing
     pitch_r = (mod * teeth) / 2;
     add_r   = pitch_r + mod;
     ded_r   = pitch_r - 1.25 * mod;
-    step    = 360 / teeth;
-    difference() {
-        circle(r=add_r);
+    tw_root = PI * mod * 0.62;   // tooth width at root
+    tw_tip  = PI * mod * 0.34;   // tooth width at tip
+    union() {
+        circle(r=ded_r);
         for (i = [0:teeth-1])
-            rotate([0, 0, i * step + step/2])
-                translate([0, ded_r + (add_r - ded_r)/2])
-                    scale([(add_r-ded_r)*0.45, (add_r-ded_r)*0.6]) circle(r=1);
+            rotate([0, 0, i * 360/teeth])
+                polygon([[-tw_root/2, ded_r-0.2], [tw_root/2, ded_r-0.2],
+                         [ tw_tip/2,  add_r],     [-tw_tip/2, add_r]]);
     }
-    circle(r=ded_r);
 }
+
+// Herringbone: twist derived from the helix angle for THIS gear's size.
+// (rev 3 fix — twist was previously a fixed 30 deg, shearing teeth to ~87
+//  deg overhangs and forcing supports. Correct twist = helix arc / pitch
+//  circumference, ~3.3 deg on the 40T, ~13 deg on the 10T.)
+function hb_twist(teeth, mod, half_w, helix) =
+    tan(helix) * half_w / (PI * mod * teeth) * 360;
 
 module hb_gear(teeth, mod, width, helix) {
     half = width / 2;
+    tw   = hb_twist(teeth, mod, half, helix);
     translate([0, 0, half])
         for (h = [0, 1]) mirror([0, 0, h])
-            linear_extrude(height=half, twist=helix, slices=8, convexity=6)
+            linear_extrude(height=half, twist=tw, slices=6, convexity=6)
                 gear_2d(teeth, mod);
 }
 

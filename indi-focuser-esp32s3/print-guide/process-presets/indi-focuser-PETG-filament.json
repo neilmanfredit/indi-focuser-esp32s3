@@ -1,0 +1,24 @@
+{
+  "type": "filament",
+  "name": "indi-focuser-PETG",
+  "inherits": "Generic PETG",
+  "description": "PETG filament profile for the indi-focuser-esp32s3 motor mount parts. Tuned for outdoor-rated structural and gear prints on Bambu Lab H2S.",
+
+  "nozzle_temperature": [240, 240],
+  "nozzle_temperature_initial_layer": [240, 240],
+
+  "bed_temperature": [70, 70],
+  "bed_temperature_initial_layer": [70, 70],
+
+  "fan_min_speed": 40,
+  "fan_max_speed": 60,
+  "slow_down_min_speed": 10,
+
+  "overhang_fan_threshold": 50,
+  "overhang_fan_speed": 80,
+
+  "filament_retract_length": [0.8],
+  "filament_retract_speed": [35],
+
+  "notes": "Textured PEI plate recommended. Clean plate with IPA before each print. Dry filament at 65C for 4-6 hours before printing gears. PETG sticks aggressively to smooth PEI — use textured plate only."
+}
