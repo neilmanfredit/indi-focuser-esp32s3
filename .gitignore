@@ -12,14 +12,11 @@ indi_driver/build/
 
 # OpenSCAD exports
 *.stl
-!3d_files/*.stl
 *.amf
 *.3mf
 *.dxf
 *.svg
 *.png
-!docs/images/*.png
-!docs/images/*.svg
 
 # Python
 __pycache__/
@@ -43,3 +40,4 @@ desktop.ini
 # Archives
 *.tar.gz
 *.zip
+!3d_files/bambu-3mf/*.3mf
